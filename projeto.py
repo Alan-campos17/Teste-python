@@ -13,11 +13,11 @@ while (rodada <= total_de_tentativas):
     print("Você digitou o número:", chute_str)
     chute = int(chute_str)
 
-    acertou = chute = => numero_acertou
-    maior = chute = => numero_maior
-    secreto = chute = => numero_secreto
+    acertou = chute = = numero_acertou
+    maior = chute > numero_maior
+    secreto = chute < numero_secreto
 
-    if(acertou)
+    if(acertou):
     print("Parabens, você acertou!")
     else:
        if(maior):
