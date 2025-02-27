@@ -1,9 +1,26 @@
+print("****************************")
+print("Bem vindo ao jogo da forca")
+print("****************************")
+
 palavra = "python"
+
+enforcou = False
+ganhou = False
 
 letras_usuarios = []
 chances = 7
 
-ganhou = False
+while(not enforcou and not acertou ):
+   chute = input("qual a letra?")
+   chute = chute.strip()
+
+   index = 0
+   for letra in palavra_secreta:
+      if(chute == letra):
+         print( f"Encontrei a letra {letra} na posição{index}")
+         index = index + 1
+   print("jogando....")
+   print("fim de jogo")
 
 while True:
     # criar a nossa logica
