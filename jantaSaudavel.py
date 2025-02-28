@@ -1,0 +1,22 @@
+jantaNormal = ["salsicha","X-bacon","Miojo","Coca-cola","Pizza-Doce"]
+
+jantaNormal.append("torresmo")
+jantaNormal.append()
+jantaNormal.append()
+jantaNormal.append()
+jantaNormal.append()
+jantaNormal.append()
+jantaNormal.append()
+jantaNormal.append()
+jantaNormal.pop()
+jantaNormal.pop()
+jantaNormal.pop()
+jantaNormal.pop()
+jantaNormal.pop()
+jantaNormal.pop()
+jantaNormal.pop()
+jantaNormal.pop()
+jantaNormal.pop()
+jantaNormal.pop()
+
+print(jantaNormal)

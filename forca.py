@@ -2,13 +2,10 @@ print("****************************")
 print("Bem vindo ao jogo da forca")
 print("****************************")
 
-palavra = "python"
+palavra_secreta = "python"
 
 enforcou = False
-ganhou = False
-
-letras_usuarios = []
-chances = 7
+acertou = False
 
 while(not enforcou and not acertou ):
    chute = input("qual a letra?")
@@ -16,23 +13,8 @@ while(not enforcou and not acertou ):
 
    index = 0
    for letra in palavra_secreta:
-      if(chute == letra):
+      if(chute.upper()==letra.upper()):
          print( f"Encontrei a letra {letra} na posição{index}")
          index = index + 1
    print("jogando....")
-   print("fim de jogo")
-
-while True:
-    # criar a nossa logica
- for letra in palavra:
-    if letra in letras_usuarios:
-       print(letra, end=" ")
-    else:
-       print("_",  end=" ")
-       print("")
-       break
-
-if ganhou:
-    print(f"parabens, você ganhou. A palavra era: {palavra} ")
-else:
-    print(f"Você perdeu! A palavra era {palavra}")
+print("fim de jogo")
