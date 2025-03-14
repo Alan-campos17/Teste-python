@@ -8,8 +8,8 @@ jantaNormal.append("batata frita")
 jantaNormal.append("salada")
 jantaNormal.append("suco")
 
-# Removendo os últimos 5 itens adicionados
-for _ in range(5):
+# Removendo os últimos 3 itens adicionados, se existirem
+for _ in range(3):
     if jantaNormal:  # Verifica se a lista não está vazia
         jantaNormal.pop()
 
