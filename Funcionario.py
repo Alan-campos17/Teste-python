@@ -12,14 +12,20 @@ class Funcionario:
         return f"Novo salário de {self.nome}: R${self.salario:.2f}"
 
 
-# Se o arquivo for executado diretamente, roda esse teste
 if __name__ == "__main__":
-    f1 = Funcionario("João", "Desenvolvedor", 3500)
-    print("📋 Dados do Funcionário:")
-    print(f1.exibir_info())
+    print("=== Cadastro de Funcionário ===")
+    nome = input("Digite o nome do funcionário: ")
+    cargo = input("Digite o cargo do funcionário: ")
+    salario = float(input("Digite o salário do funcionário: "))
 
-    print("\n💸 Aplicando aumento de 15%...")
-    print(f1.aumentar_salario(15))
+    funcionario = Funcionario(nome, cargo, salario)
 
-    print("\n📋 Dados atualizados:")
-    print(f1.exibir_info())
+    print("\n📋 Dados cadastrados:")
+    print(funcionario.exibir_info())
+
+    opcao = input("\nDeseja aplicar um aumento? (s/n): ")
+    if opcao.lower() == "s":
+        porcentagem = float(input("Digite a porcentagem de aumento: "))
+        print(funcionario.aumentar_salario(porcentagem))
+        print("\n📋 Dados atualizados:")
+        print(funcionario.exibir_info())
